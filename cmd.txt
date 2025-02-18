@@ -1,0 +1,17 @@
+# Update and upgrade your system packages to ensure everything is up to date
+pkg update -y && pkg upgrade -y
+
+# Install Node.js (JavaScript runtime) and Git (version control system) 
+pkg install -y nodejs git
+
+# Clone the GitHub repository into your local machine
+git clone https://github.com/coderxsa/simple-tm-bot.git
+
+# Change into the directory of the cloned repository
+cd simple-tm-bot
+
+# Install the necessary dependencies for the project defined in package.json
+npm i
+
+# Run the Node.js application, passing a specific phone number u want to use and get the login code
+node index.js 27938337
