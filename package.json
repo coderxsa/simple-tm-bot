@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@mengkodingan/ckptw": "^4.3.9",
+    "coderx": "^6.6.6",
     "express": "^4.21.2",
     "moment-timezone": "^0.5.46"
   }
