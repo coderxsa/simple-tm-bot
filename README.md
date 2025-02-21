@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple TM Bot - CODERX</title>
+    <title>Simple TM Bot - README</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,21 +11,7 @@
             background-color: #f4f4f4;
             color: #333;
             padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        code {
-            background: #eee;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #272822;
-            color: #f8f8f2;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
+            margin: 0;
         }
         .container {
             max-width: 800px;
@@ -35,13 +21,38 @@
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>Simple TM Bot</h1>
-    <p>A simple Telegram bot that runs on <strong>Termux</strong> using <strong>CODERX</strong>.</p>
+    <p>A simple Telegram bot that runs on <strong>Termux</strong> using <strong>Node.js</strong>.</p>
 
     <h2>Installation</h2>
 
@@ -64,14 +75,14 @@
         <li><strong>Install the necessary dependencies</strong>:</li>
         <pre><code>npm install</code></pre>
 
-        <li><strong>Run the Node.js application</strong> (replace <code>27938337</code> with your specific phone number to get the login code):</li>
+        <li><strong>Run the Node.js application</strong> (replace <code>27938337</code> with your phone number to get the login code):</li>
         <pre><code>node index.js 27938337</code></pre>
     </ol>
 
     <hr>
 
     <h3>Step 2: Relink the Bot</h3>
-    <p>If Termux disconnects, you can <strong>relink the bot</strong> by running:</p>
+    <p>If Termux disconnects, relink the bot by running:</p>
     <pre><code>cd simple-tm-bot
 node index.js 27938337</code></pre>
 
