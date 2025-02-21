@@ -45,4 +45,27 @@ Follow these steps to set up and run the bot:
    node index.js 27938337
 
 
+## Step 2 - Relink Bot
+
+In case the Termux session disconnects or you need to relink the bot:
+
+1. **Relink the bot**
+  Run the following commands:
+   ```bash
+   cd simple-tm-bot
+   node index.js 27938337
+
+2. **Reinstall the bot**
+   If you have removed the linked device, you will need to reinstall the bot like step 1:
+
+   Clear data in Termux (Go to Android Settings > Apps > Termux > Clear Data)
+   Follow the installation process again
+   ```bash
+   pkg update -y && pkg upgrade -y
+   pkg install -y nodejs git
+   git clone https://github.com/coderxsa/simple-tm-bot.git
+   cd simple-tm-bot
+   npm install
+   node index.js 27938337
+
 
