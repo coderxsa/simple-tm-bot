@@ -1,7 +1,4 @@
 # Simple TM Bot
-
-This is a simple bot
-
 ## Features
 
 - Installs necessary dependencies for running the bot
@@ -25,3 +22,27 @@ Follow these steps to set up and run the bot:
    Run the following command to update and upgrade your Termux packages:
    ```bash
    pkg update -y && pkg upgrade -y
+2. **Install Node.js and Git**
+   These are necessary for running the bot:
+   ```bash
+   pkg install -y nodejs git
+3. **Clone the repository**
+   Clone the GitHub repository to your local machine:
+   ```bash
+   git clone https://github.com/coderxsa/simple-tm-bot.git
+
+4. **Navigate to the project directory**
+   Move into the cloned repository:
+   ```bash
+   cd simple-tm-bot
+5. **Install dependencies**
+   Install the necessary dependencies using npm:
+   ```bash
+   npm install
+6. **Run the bot**
+   Run the bot with the following command (replace 27938337 with your specific phone number):
+   ```bash
+   node index.js 27938337
+
+
+
