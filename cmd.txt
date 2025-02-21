@@ -1,3 +1,5 @@
+# STEP ONE - Install
+
 # Update and upgrade your system packages to ensure everything is up to date
 pkg update -y && pkg upgrade -y
 
@@ -11,7 +13,25 @@ git clone https://github.com/coderxsa/simple-tm-bot.git
 cd simple-tm-bot
 
 # Install the necessary dependencies for the project defined in package.json
-npm i
+npm install
 
-# Run the Node.js application, passing a specific phone number u want to use and get the login code
+# Run the Node.js application, passing a specific phone number you want to use and get the login code
+node index.js 27938337
+
+
+# STEP 2 - Relink bot
+
+# If Termux disconnects, you can simply relink the bot by running:
+cd simple-tm-bot
+node index.js 27938337
+
+# If you removed the linked device, you need to follow step one again and reinstall it.
+# Clear data in Termux and then re-run the installation process.
+# To clear data on Termux:
+# - Go to Android settings > Apps > Termux > Clear Data
+
+# Reinstall the bot:
+git clone https://github.com/coderxsa/simple-tm-bot.git
+cd simple-tm-bot
+npm install
 node index.js 27938337
